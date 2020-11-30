@@ -8,6 +8,9 @@
       <source id="sound" src="StreamingAssets/SFX.mp3" type="audio/mpeg" codecs="mp3">
       Your browser does not support the audio element.
     </audio>
+      <button onclick="start()">Start</button>
+
+  
     <script src="Build/UnityLoader.js"></script>
     <script>
      
@@ -16,11 +19,7 @@
         document.getElementById("sound").play();
         
       }
-      
-      
-      window.onload = start();
-       
-  
+     
   
       UnityLoader.compatibilityCheck=function(e,t,r){t();}; 
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/orbita9.json");
